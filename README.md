@@ -5,7 +5,7 @@ By analyzing diversity and overlap of recommended videos, the project highlights
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 - Collect videos for three neutral seeds: **healthy cooking**, **beginner guitar**, and **stretching exercises**.
 - Build a simple similarity graph using TF-IDF (title + description) and cosine similarity.
 - Cluster videos with KMeans to identify latent topics.
@@ -17,7 +17,7 @@ By analyzing diversity and overlap of recommended videos, the project highlights
 
 ---
 
-## 🔗 Connection to Filter Bubbles
+## Connection to Filter Bubbles
 This project serves as a lightweight prototype for auditing algorithmic *filter bubbles*.  
 Our results illustrate the effect:
 - *Healthy cooking* produced almost no diversity, forming a tightly closed bubble.  
@@ -28,7 +28,7 @@ Even without personalization, these findings reveal how YouTube’s recommender 
 
 ---
 
-## 🧰 How to Run (Google Colab)
+## How to Run (Google Colab)
 
 1. Open the notebook in **Google Colab**.  
 2. Mount your Google Drive:
@@ -44,7 +44,7 @@ Even without personalization, these findings reveal how YouTube’s recommender 
    ```python
    !pip install google-api-python-client pandas scikit-learn networkx matplotlib joblib
    ```
-5. Provide a valid **YouTube Data API v3** key (Night 1 step):
+5. Provide a valid **YouTube Data API v3** key:
    ```python
    API_KEY = "YOUR_API_KEY"
    ```
@@ -89,7 +89,7 @@ yt_mini_project/
 
 ---
 
-## 📊 Key Figures
+## Key Figures
 
 - **Graph overview** → `figures/graph_overview.png`  
 - **Largest connected component** → `figures/graph_lcc.png`  
@@ -106,5 +106,5 @@ yt_mini_project/
 
 ---
 
-## 📜 License
+## License
 For academic/portfolio use only.
