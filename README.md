@@ -49,8 +49,11 @@ Even without personalization, these findings reveal how YouTube’s recommender 
    ```
 5. Provide a valid **YouTube Data API v3** key:
    ```python
-   API_KEY = "YOUR_API_KEY"
-   ```
+  from getpass import getpass
+API_KEY = getpass("🔑 Paste your YouTube API key (input is hidden): ").strip()
+assert API_KEY, "⚠️ Empty API_KEY"
+```
+
 6. Run the notebook cells in order:
    - Data collection (search + pool)
    - Text preprocessing
