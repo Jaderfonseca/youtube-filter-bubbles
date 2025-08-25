@@ -48,11 +48,14 @@ Even without personalization, these findings reveal how YouTube’s recommender 
    !pip install google-api-python-client pandas scikit-learn networkx matplotlib joblib
    ```
 5. Provide a valid **YouTube Data API v3** key:
-   ```python
-  from getpass import getpass
-  API_KEY = getpass("🔑 Paste your YouTube API key (input is hidden): ").strip()
-  assert API_KEY, "⚠️ Empty API_KEY"
-  ```
+5. Provide a valid YouTube Data API v3 key:
+
+```python
+from getpass import getpass
+
+API_KEY = getpass("🔑 Paste your YouTube API key (input is hidden): ").strip()
+assert API_KEY, "⚠️ Empty API_KEY"
+
 
 6. Run the notebook cells in order:
    - Data collection (search + pool)
