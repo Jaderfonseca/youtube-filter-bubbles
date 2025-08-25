@@ -35,19 +35,21 @@ Even without personalization, these findings reveal how YouTube’s recommender 
 1. Open the notebook in **Google Colab**. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jaderfonseca/youtube-filter-bubbles/blob/main/pipeline.ipynb)
 
 2. Mount your Google Drive:
+⚠️ Note: When you run `drive.mount('/content/drive')`, the notebook connects to **your own Google Drive** (not the author’s).  
+Make sure to create a folder like `/MyDrive/yt_mini_project` in your Drive before running the pipeline.
    ```python
    from google.colab import drive
    drive.mount('/content/drive')
    ```
-3. Define project base:
+4. Define project base:
    ```python
    BASE = "/content/drive/MyDrive/yt_mini_project"
    ```
-4. Install dependencies (if missing):
+5. Install dependencies (if missing):
    ```python
    !pip install google-api-python-client pandas scikit-learn networkx matplotlib joblib
    ```
-5. Provide a valid **YouTube Data API v3** key:
+6. Provide a valid **YouTube Data API v3** key:
 ```python
 from getpass import getpass
 
