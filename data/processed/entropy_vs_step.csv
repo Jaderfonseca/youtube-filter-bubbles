@@ -1,0 +1,13 @@
+seed_query,step,entropy,n_videos
+beginner guitar,0,-0.0,5
+beginner guitar,1,0.228538143953528,27
+beginner guitar,2,0.4310167689753773,58
+beginner guitar,3,0.7559875211517304,96
+healthy cooking,0,-0.0,5
+healthy cooking,1,0.21639693245126462,29
+healthy cooking,2,0.39124356362925566,78
+healthy cooking,3,0.9615025427470976,130
+stretching exercises,0,-0.0,5
+stretching exercises,1,0.3809465857053901,27
+stretching exercises,2,0.7861645103660257,73
+stretching exercises,3,1.164064132145235,135

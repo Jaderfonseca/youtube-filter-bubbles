@@ -1,0 +1,110 @@
+# Exploring Filter Bubbles in YouTube Recommendations
+
+This mini-project investigates how YouTube’s recommender system organizes content starting from neutral seed queries.  
+By analyzing diversity and overlap of recommended videos, the project highlights structural patterns that resemble *filter bubbles* — situations where users are exposed to narrow and repetitive content, limiting perspectives.
+
+---
+
+## 🎯 Project Objective
+- Collect videos for three neutral seeds: **healthy cooking**, **beginner guitar**, and **stretching exercises**.
+- Build a simple similarity graph using TF-IDF (title + description) and cosine similarity.
+- Cluster videos with KMeans to identify latent topics.
+- Compute three main metrics:
+  - **Diversity** (normalized entropy per seed)
+  - **Overlap** (Jaccard between seeds, by video IDs)
+  - **Entropy vs Step** (growth of diversity during exploration)
+- Visualize results as graphs and charts.
+
+---
+
+## 🔗 Connection to Filter Bubbles
+This project serves as a lightweight prototype for auditing algorithmic *filter bubbles*.  
+Our results illustrate the effect:
+- *Healthy cooking* produced almost no diversity, forming a tightly closed bubble.  
+- *Stretching exercises* showed broader variation.  
+- Across seeds, overlap was **zero**, suggesting strong isolation between content domains.  
+
+Even without personalization, these findings reveal how YouTube’s recommender can reinforce bounded information environments — a central concern in AI ethics and media governance.
+
+---
+
+## 🧰 How to Run (Google Colab)
+
+1. Open the notebook in **Google Colab**.  
+2. Mount your Google Drive:
+   ```python
+   from google.colab import drive
+   drive.mount('/content/drive')
+   ```
+3. Define project base:
+   ```python
+   BASE = "/content/drive/MyDrive/yt_mini_project"
+   ```
+4. Install dependencies (if missing):
+   ```python
+   !pip install google-api-python-client pandas scikit-learn networkx matplotlib joblib
+   ```
+5. Provide a valid **YouTube Data API v3** key (Night 1 step):
+   ```python
+   API_KEY = "YOUR_API_KEY"
+   ```
+6. Run the notebook cells in order:
+   - Data collection (search + pool)
+   - Text preprocessing
+   - TF-IDF + similarity
+   - Clustering
+   - Metrics + plots  
+
+All outputs (CSV + PNG) are automatically saved into `yt_mini_project/`.
+
+---
+
+## 📁 Folder Structure
+
+```
+yt_mini_project/
+├── data/
+│   ├── raw/
+│   │   ├── videos_raw.csv
+│   │   └── edges_raw.csv
+│   ├── clean/
+│   │   ├── videos_clean.csv
+│   │   └── edges_clean.csv
+│   └── processed/
+│       ├── videos_with_clusters.csv
+│       ├── cluster_seed_counts.csv
+│       ├── similarity_matrix.npy
+│       ├── tfidf_vectorizer.joblib
+│       ├── diversity_per_seed.csv
+│       ├── entropy_vs_step.csv
+│       └── jaccard_seeds.csv
+├── figures/
+│   ├── graph_overview.png
+│   ├── graph_lcc.png
+│   ├── jaccard_seed.png
+│   ├── diversity_per_seed.png
+│   └── entropy_vs_step.png
+└── README.md
+```
+
+---
+
+## 📊 Key Figures
+
+- **Graph overview** → `figures/graph_overview.png`  
+- **Largest connected component** → `figures/graph_lcc.png`  
+- **Jaccard similarity (video IDs)** → `figures/jaccard_seed.png`  
+- **Diversity by seed** → `figures/diversity_per_seed.png`  
+- **Entropy vs Step** → `figures/entropy_vs_step.png`  
+
+---
+
+## ⚠️ Limitations
+- Small scale (3 seeds, ~150 videos each).  
+- Text-only features (title + description).  
+- Results vary with API queries and collection date.  
+
+---
+
+## 📜 License
+For academic/portfolio use only.
