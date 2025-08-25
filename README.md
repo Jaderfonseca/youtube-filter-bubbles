@@ -3,6 +3,8 @@
 This mini-project investigates how YouTube’s recommender system organizes content starting from neutral seed queries.  
 By analyzing diversity and overlap of recommended videos, the project highlights structural patterns that resemble *filter bubbles* — situations where users are exposed to narrow and repetitive content, limiting perspectives.
 
+📄 [Mini-report (PDF)](docs/Exploring_Filter_Bubbles.pdf)
+
 ---
 
 ## Project Objective
