@@ -55,7 +55,7 @@ API_KEY = getpass("Paste your YouTube API key (input is hidden): ").strip()
 assert API_KEY, "Empty API_KEY"
 ```
 
-6. Run the notebook cells in order(**Colab**):
+6. Run the notebook cells in order(**In Colab**):
    - Data collection (search + pool)
    - Text preprocessing
    - TF-IDF + similarity
