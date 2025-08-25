@@ -32,7 +32,8 @@ Even without personalization, these findings reveal how YouTube’s recommender 
 
 ## How to Run (Google Colab)
 
-1. Open the notebook in **Google Colab**.  
+1. Open the notebook in **Google Colab**. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jaderfonseca/youtube-filter-bubbles/blob/main/seu_notebook.ipynb)
+
 2. Mount your Google Drive:
    ```python
    from google.colab import drive
