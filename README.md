@@ -77,7 +77,7 @@ figures/
  ├── diversity_per_seed.png
  └── entropy_vs_step.png
 
-
+```
 ---
 
 ## Key Figures
