@@ -54,6 +54,7 @@ All outputs (CSV + PNG) are automatically saved into the 'data/' and 'figures/' 
 ---
 
 ## Folder Structure
+```python
 
 data/
  ├── raw/
@@ -76,8 +77,8 @@ figures/
  ├── jaccard_seeds.png
  ├── diversity_per_seed.png
  └── entropy_vs_step.png
-
 ```
+
 ---
 
 ## Key Figures
