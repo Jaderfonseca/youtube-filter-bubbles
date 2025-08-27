@@ -54,7 +54,7 @@ All outputs (CSV + PNG) are automatically saved into the 'data/' and 'figures/' 
 ---
 
 ## Folder Structure
-```python
+```
 
 data/
  ├── raw/
