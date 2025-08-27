@@ -53,34 +53,29 @@ All outputs (CSV + PNG) are automatically saved into the 'data/' and 'figures/' 
 
 ---
 
-Folder Structure
-----------------
+## Folder Structure
 
-
-data/                 # all intermediate CSV/NPY outputs
-│
-├── raw/              # raw data collected directly from YouTube API
-│   ├── videos_raw.csv
-│   └── edges_raw.csv
-│
-├── clean/            # deduplicated + preprocessed data
-│   ├── videos_clean.csv
-│   └── edges_clean.csv
-│
-└── processed/        # analysis-ready outputs
-    ├── videos_with_clusters.csv
-    ├── cluster_seed_counts.csv
-    ├── similarity_matrix.npy
-    ├── tfidf_vectorizer.joblib
-    ├── diversity_per_seed.csv
-    ├── entropy_vs_step.csv
-    └── jaccard_seeds.csv
-figures/              # all generated plots
-├── graph_overview.png
-├── graph_lcc.png
-├── jaccard_seeds.png
-├── diversity_per_seed.png
-└── entropy_vs_step.png
+data/
+ ├── raw/
+ │   ├── videos_raw.csv
+ │   └── edges_raw.csv
+ ├── clean/
+ │   ├── videos_clean.csv
+ │   └── edges_clean.csv
+ ├── processed/
+ │   ├── videos_with_clusters.csv
+ │   ├── cluster_seed_counts.csv
+ │   ├── similarity_matrix.npy
+ │   ├── tfidf_vectorizer.joblib
+ │   ├── diversity_per_seed.csv
+ │   ├── entropy_vs_step.csv
+ │   └── jaccard_seeds.csv
+figures/
+ ├── graph_overview.png
+ ├── graph_lcc.png
+ ├── jaccard_seeds.png
+ ├── diversity_per_seed.png
+ └── entropy_vs_step.png
 
 
 ---
