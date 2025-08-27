@@ -72,7 +72,6 @@ data/
  │   ├── entropy_vs_step.csv
  │   └── jaccard_seeds.csv
 figures/
- ├── graph_overview.png
  ├── graph_lcc.png
  ├── jaccard_seeds.png
  ├── diversity_per_seed.png
@@ -83,7 +82,6 @@ figures/
 
 ## Key Figures
 
-- **Graph overview** → `figures/graph_overview.png`  
 - **Largest connected component** → `figures/graph_lcc.png`  
 - **Jaccard similarity (video IDs)** → `figures/jaccard_seeds.png`  
 - **Diversity by seed** → `figures/diversity_per_seed.png`  
@@ -92,9 +90,12 @@ figures/
 ---
 
 ## ⚠️ Limitations
-- Small scale (3 seeds, ~150 videos each).  
-- Text-only features (title + description).  
-- Results vary with API queries and collection date.  
+
+- Small scale: only 3 seed queries (~150 videos each).  
+- Text-only features (title + description) were analyzed, without transcripts or engagement metrics.  
+- Diversity and entropy metrics depend on sampling and API limits; results may vary across runs.  
+- Jaccard similarity captures only video/channel overlap, not deeper thematic relationships.  
+- Clustering (TF-IDF + KMeans) provides a coarse partition, useful for exploration but not production-level audits.  
 
 ---
 
