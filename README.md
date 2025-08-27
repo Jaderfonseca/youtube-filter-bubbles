@@ -75,7 +75,6 @@ data/                 # all intermediate CSV/NPY outputs
     ├── diversity_per_seed.csv
     ├── entropy_vs_step.csv
     └── jaccard_seeds.csv
-
 figures/              # all generated plots
 ├── graph_overview.png
 ├── graph_lcc.png
