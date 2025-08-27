@@ -34,22 +34,7 @@ Even without personalization, these findings reveal how YouTube’s recommender 
 
 1. Open the notebook in **Google Colab**. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jaderfonseca/youtube-filter-bubbles/blob/main/pipeline_clean.ipynb)
 
-2. Mount your Google Drive:
-⚠️ Note: When you run `drive.mount('/content/drive')`, the notebook connects to **your own Google Drive** (not the author’s).  
-Make sure to create a folder like `/MyDrive/yt_mini_project` in your Drive before running the pipeline.
-   ```python
-   from google.colab import drive
-   drive.mount('/content/drive')
-   ```
-4. Define project base:
-   ```python
-   BASE = "/content/drive/MyDrive/yt_mini_project"
-   ```
-5. Install dependencies (if missing):
-   ```python
-   !pip install google-api-python-client pandas scikit-learn networkx matplotlib joblib
-   ```
-6. Provide a valid **YouTube Data API v3** key:
+2. Provide a valid **YouTube Data API v3** key:
 ```python
 from getpass import getpass
 
@@ -57,21 +42,20 @@ API_KEY = getpass("Paste your YouTube API key (input is hidden): ").strip()
 assert API_KEY, "Empty API_KEY"
 ```
 
-6. Run the notebook cells in order(**In Colab**):
+3. Run the notebook cells in order(**In Colab**):
    - Data collection (search + pool)
    - Text preprocessing
    - TF-IDF + similarity
    - Clustering
    - Metrics + plots  
 
-All outputs (CSV + PNG) are automatically saved into `yt_mini_project/`.
+All outputs (CSV + PNG) are automatically saved into the 'data/' and 'figures/' folders.
 
 ---
 
 ## 📁 Folder Structure
 
 ```
-yt_mini_project/
 ├── data/
 │   ├── raw/
 │   │   ├── videos_raw.csv
@@ -90,7 +74,7 @@ yt_mini_project/
 ├── figures/
 │   ├── graph_overview.png
 │   ├── graph_lcc.png
-│   ├── jaccard_seed.png
+│   ├── jaccard_seeds.png
 │   ├── diversity_per_seed.png
 │   └── entropy_vs_step.png
 └── README.md
