@@ -85,7 +85,7 @@ figures/
 
 - **Graph overview** → `figures/graph_overview.png`  
 - **Largest connected component** → `figures/graph_lcc.png`  
-- **Jaccard similarity (video IDs)** → `figures/jaccard_seed.png`  
+- **Jaccard similarity (video IDs)** → `figures/jaccard_seeds.png`  
 - **Diversity by seed** → `figures/diversity_per_seed.png`  
 - **Entropy vs Step** → `figures/entropy_vs_step.png`  
 
