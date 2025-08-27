@@ -56,6 +56,7 @@ All outputs (CSV + PNG) are automatically saved into the 'data/' and 'figures/' 
 Folder Structure
 ----------------
 
+
 data/                 # all intermediate CSV/NPY outputs
 │
 ├── raw/              # raw data collected directly from YouTube API
@@ -81,6 +82,7 @@ figures/              # all generated plots
 ├── jaccard_seeds.png
 ├── diversity_per_seed.png
 └── entropy_vs_step.png
+
 
 ---
 
