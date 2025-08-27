@@ -32,7 +32,7 @@ Even without personalization, these findings reveal how YouTube’s recommender 
 
 ## How to Run (Google Colab)
 
-1. Open the notebook in **Google Colab**. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jaderfonseca/youtube-filter-bubbles/blob/main/pipeline_clean_mozilla_setup.ipynb)
+1. Open the notebook in **Google Colab**. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jaderfonseca/youtube-filter-bubbles/blob/main/pipeline_clean.ipynb)
 
 2. Mount your Google Drive:
 ⚠️ Note: When you run `drive.mount('/content/drive')`, the notebook connects to **your own Google Drive** (not the author’s).  
