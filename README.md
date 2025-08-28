@@ -54,7 +54,7 @@ This notebook can be executed in two modes:
 
 This ensures that reviewers can reproduce the results deterministically (False) or test the pipeline with fresh snapshots of YouTube recommendations (True).
 
-3. Run the notebook cells in order(**In Colab**):
+4. Run the notebook cells in order(**In Colab**):
    - Data collection (search + pool)
    - Text preprocessing
    - TF-IDF + similarity
