@@ -1,6 +1,8 @@
-google-api-python-client
-pandas
-scikit-learn
-networkx
-matplotlib
-joblib
+google-api-python-client==2.151.0
+pandas==1.5.3
+numpy==1.24.4
+scikit-learn==1.3.2
+networkx==2.8.8
+matplotlib==3.7.5
+joblib==1.3.2
+seaborn==0.13.2
