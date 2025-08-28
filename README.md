@@ -45,6 +45,15 @@ assert API_KEY, "Empty API_KEY"
 - This project requires a valid **YouTube Data API v3 key**.  
 You can create one in the [Google Cloud Console](https://console.cloud.google.com/) by enabling the YouTube Data API v3 under your project and generating an API key.
 
+3. Running with or without API
+
+This notebook can be executed in two modes:
+
+- **USE_API = True** → performs a fresh data collection using your own YouTube Data API v3 key (≈150 videos per seed).  
+- **USE_API = False** → skips collection and instead loads the existing CSV files from `data/` (raw, clean, processed).  
+
+This ensures that reviewers can reproduce the results deterministically (False) or test the pipeline with fresh snapshots of YouTube recommendations (True).
+
 3. Run the notebook cells in order(**In Colab**):
    - Data collection (search + pool)
    - Text preprocessing
