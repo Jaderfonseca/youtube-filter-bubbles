@@ -4,7 +4,7 @@ This mini-project investigates how YouTube’s recommender system organizes cont
 By analyzing diversity and overlap of recommended videos, the project highlights structural patterns that resemble *filter bubbles* — situations where users are exposed to narrow and repetitive content, limiting perspectives.
 
 📄 [Mini-report PDF](Mini-Report_YouTube_Seed_Analysis.pdf)
-The mini-report PDF is included for quick reference in portfolio submissions, providing a concise overview of methods, results, and key figures without requiring the notebook.
+The mini-report PDF is included for quick reference in portfolio submissions, providing a concise overview of methodS, results, and key figures without requiring the notebook.
 
 ---
 
