@@ -41,9 +41,9 @@ from getpass import getpass
 
 API_KEY = getpass("Paste your YouTube API key (input is hidden): ").strip()
 assert API_KEY, "Empty API_KEY"
+```
 - This project requires a valid **YouTube Data API v3 key**.  
 You can create one in the [Google Cloud Console](https://console.cloud.google.com/) by enabling the YouTube Data API v3 under your project and generating an API key.
-```
 
 3. Run the notebook cells in order(**In Colab**):
    - Data collection (search + pool)
