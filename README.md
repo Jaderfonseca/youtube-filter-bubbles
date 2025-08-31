@@ -31,6 +31,12 @@ Even without personalization, these findings reveal how YouTube’s recommender 
 
 ---
 
+## Ethical Note
+
+Beyond producing graphs, this mini-project highlights ethical concerns: how narrow recommendation spaces can isolate users, limit diversity of perspectives, and raise questions about accountability in recommender systems.
+
+---
+
 ## How to Run (Google Colab)
 
 1. Open the notebook in **Google Colab**. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jaderfonseca/youtube-filter-bubbles/blob/main/pipeline_clean.ipynb)
