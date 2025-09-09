@@ -8,7 +8,7 @@ The mini-report PDF is included for quick reference in portfolio submissions, pr
 
 ---
 
-## Project Objective
+## Objective
 - Collect videos for three neutral seeds: **healthy cooking**, **beginner guitar**, and **stretching exercises**.
 - Build a simple similarity graph using TF-IDF (title + description) and cosine similarity.
 - Cluster videos with KMeans to identify latent topics.
