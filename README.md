@@ -39,7 +39,7 @@ Beyond producing graphs, this mini-project highlights ethical concerns: how narr
 
 ## How to Run (Google Colab)
 
-1. Open the notebook in **Google Colab**. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jaderfonseca/youtube-filter-bubbles/blob/main/pipeline_clean.ipynb)
+1. Open the notebook in **Google Colab**. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jaderfonseca/youtube-filter-bubbles/blob/main/analysis_filter_bubbles.ipynb)
 
 2. Provide a valid **YouTube Data API v3** key:
 ```python
