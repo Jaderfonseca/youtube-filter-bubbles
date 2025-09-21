@@ -51,6 +51,8 @@ assert API_KEY, "Empty API_KEY"
 - This project requires a valid **YouTube Data API v3 key**.  
 You can create one in the [Google Cloud Console](https://console.cloud.google.com/) by enabling the YouTube Data API v3 under your project and generating an API key.
 
+> **Note on consistency across runs.** Re-running the pipeline with fresh API calls changes the exact videos retrieved, but the **structural patterns remain consistent**: near-zero overlap between seeds, siloed clusters per seed, and a rapid reduction of diversity across recommendation steps.
+
 3. Running with or without API
 
 This notebook can be executed in two modes:
